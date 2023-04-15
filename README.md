@@ -2,7 +2,7 @@
 
 ## Deployment URL
 
-url:
+url: https://austingrech.github.io/The-Weather-Dashboard/
 
 ## Mock-Up
 
