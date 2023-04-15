@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 105%;
+  font-family: "Permanent Marker", cursive;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  list-style-type: none;
+}
+
+:root {
+  --background: lightblue;
+  --text: black;
+  --border: lightskyblue;
+}
+
+body {
+  background-image: url(/assets/images/cloudy-2294671.jpg);
+}
+
+header {
+  padding: 0;
+  margin: 0;
+  width: 110%;
+}
+
+h5 {
+  border-bottom: 2px solid var(--border);
+  border-left: 2px solid var(--border);
+  border-radius: 10px;
+  padding-left: 5px;
+}
+.Dashtitle {
+  background-color: var(--background);
+  color: var(--text);
+  border-bottom: 2px solid var(--border);
+  text-align: right;
+  padding-right: 30%;
+  font-size: 40px;
+  height: 50px;
+  width: 105%;
+}
+
+.citylist {
+  height: 800px;
+  color: var(--text);
+  margin-left: 10px;
+}
+
+.btn {
+  margin-top: 10px;
+  width: 100%;
+  background-color: var(--background);
+  color: var(--text);
+  border: 2px solid lightskyblue;
+}
+
+#cityname {
+  border-bottom: 2px solid var(--border);
+  border-left: 2px solid var(--border);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#cityid {
+  color: var(--text);
+  background-color: var(--background);
+  margin-top: 10px;
+  padding: 10px;
+  border: 4px solid var(--border);
+  border-radius: 10px;
+  height: 400px;
+}
+
+.cityforecast {
+  width: 65%;
+}
+
+#fivedayforecast {
+  text-align: left;
+  position: relative;
+  top: 15px;
+  width: 105%;
+  color: var(--text);
+}
+.date {
+  width: 170px;
+}
+.card {
+  line-height: 2.5;
+  margin: 17px;
+  width: 17rem;
+  height: 335px;
+  background-color: var(--background);
+  border: 4px solid var(--border);
+}
+
+@media only screen and (max-width: 1480px) {
+  .card {
+    margin: 4px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .cityforecast {
+    width: 62%;
+  }
+  .card {
+    width: 40%;
+    margin: 35px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .card {
+    width: 40%;
+    margin: 30px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .Dashtitle {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+  .cityforecast {
+    width: 97%;
+    margin-top: 50px;
+    position: relative;
+    left: 10px;
+  }
+
+  .citylist {
+    height: fit-content;
+    width: 97%;
+  }
+
+  .card {
+    width: 30%;
+    margin: 5px;
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .card {
+    height: 420px;
+    width: 45%;
+    position: relative;
+    right: 5px;
+    left: 12px;
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  * {
+    position: relative;
+    left: 0.5px;
+  }
+
+  .card {
+    width: 93%;
+    height: 40%;
+  }
+}
