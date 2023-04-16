@@ -38,17 +38,7 @@ $(document).ready(function () {
     renderCityButtons();
 
     // Clear input field
-    $("#city-input").val("");
-  });
-
-  // Event delegation for city buttons
-
-  $("#city-buttons").on("click", ".city-btn", function () {
-    // Get city name from button text
-    var city = $(this).text();
-
-    // Call function to get weather data for the city
-    getWeather(city);
+    $("#exampleDataList").val("");
   });
 
   // Function to render city buttons
@@ -65,19 +55,16 @@ $(document).ready(function () {
       $("#citybtns").append(li);
     }
   }
-  // Event delegation for city buttons
+
+  // Event listener for city buttons
   $("#citybtns").on("click", ".city-btn", function (event) {
     event.preventDefault();
     // Get city name from button text
     var city = $(this).text();
 
-    // Set the city name input value
-    $("#exampleDataList").val(city);
-
-    // Trigger form submission
-    $("form").submit;
+    // Call function to get weather data for the city
+    getWeather(city);
   });
-
   // Function to get weather data for a city
   function getWeather(city) {
     // API key for OpenWeatherMap API
